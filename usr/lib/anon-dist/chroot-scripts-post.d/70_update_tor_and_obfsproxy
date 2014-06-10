@@ -53,7 +53,7 @@ ls -la /var/lib/apt/lists/ || true
 ## At time of writing, there was only obfs2 in Debian Wheezy, while there was already
 ## obfs3 in Torprojects repository.
 ##
-## /help-steps/chroot-img in Whonix source code prevents daemons from getting started,
+## /help-steps/chroot-raw in Whonix source code prevents daemons from getting started,
 ## (using policy-rc.d).
 ## So Tor will not be started while building Whonix, but when booting the image, just
 ## as intended.
