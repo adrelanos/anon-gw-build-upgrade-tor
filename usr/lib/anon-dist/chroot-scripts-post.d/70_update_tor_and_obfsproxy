@@ -59,6 +59,7 @@ ls -la /var/lib/apt/lists/ || true
 ## as intended.
 apt-get \
    $apt_timeout_opts \
+   $apt_misc_opts \
    -o Dir::Etc::sourcelist="/etc/apt/sources.list.d/torproject.list" \
    $apt_sourceparts \
    --yes \
@@ -66,6 +67,7 @@ apt-get \
 
 apt-get \
    $apt_timeout_opts \
+   $apt_misc_opts \
    -o Dir::Etc::sourcelist="/etc/apt/sources.list.d/torproject.list" \
    $apt_sourceparts \
    --yes \
@@ -73,6 +75,7 @@ apt-get \
 
 apt-get \
    $apt_timeout_opts \
+   $apt_misc_opts \
    -o Dir::Etc::sourcelist="/etc/apt/sources.list.d/torproject.list" \
    $apt_sourceparts \
    --yes \
@@ -80,6 +83,7 @@ apt-get \
 
 apt-get \
    $apt_timeout_opts \
+   $apt_misc_opts \
    -o Dir::Etc::sourcelist="/etc/apt/sources.list.d/torproject.list" \
    $apt_sourceparts \
    --yes \
