@@ -1,3 +1,9 @@
+anon-gw-build-upgrade-tor (3:1.1-1) unstable; urgency=low
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Fri, 15 May 2015 20:32:24 +0000
+
 anon-gw-build-upgrade-tor (3:1.0-1) unstable; urgency=low
 
   * New upstream version (local package).
