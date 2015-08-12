@@ -39,11 +39,6 @@ for skip_script in $SKIP_SCRIPTS; do
 done
 unset skip_script
 
-## Enable apt-cacher-ng proxy.
-if [ "$(type -t aptcachemaybeenable)" = "function" ]; then
-   aptcachemaybeenable
-fi
-
 ## Debugging.
 ls -la /var/lib/apt/lists/ || true
 
@@ -88,9 +83,6 @@ apt-get \
    $apt_sourceparts \
    --yes \
    install obfsproxy
-
-## Disable apt-cacher-ng proxy.
-unset http_proxy
 
 ## Explicitly "exit 0", so eventually trapped errors can be ignored.
 exit 0
